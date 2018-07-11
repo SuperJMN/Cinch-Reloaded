@@ -3,12 +3,12 @@ using System.ComponentModel;
 using System.ComponentModel.Composition;
 using System.Windows;
 using System.Windows.Input;
-using CinchExtended.BusinessObjects;
-using CinchExtended.Commands;
-using CinchExtended.Services.Implementation;
-using CinchExtended.Services.Interfaces;
-using CinchExtended.Utilities;
-using CinchExtended.ViewModels;
+using Cinch.Reloaded.BusinessObjects;
+using Cinch.Reloaded.Commands;
+using Cinch.Reloaded.Services.Implementation;
+using Cinch.Reloaded.Services.Interfaces;
+using Cinch.Reloaded.Utilities;
+using Cinch.Reloaded.ViewModels;
 using MEFedMVVM.ViewModelLocator;
 
 namespace Tester

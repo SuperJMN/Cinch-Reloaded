@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
-using CinchExtended.Workspaces;
+using Cinch.Reloaded.Workspaces;
 
 namespace Tester
 {

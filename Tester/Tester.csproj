@@ -122,9 +122,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cinch\Cinch.csproj">
-      <Project>{673879ad-29c1-42b8-9a79-3750418696ab}</Project>
-      <Name>Cinch</Name>
+    <ProjectReference Include="..\Cinch.Reloaded\Cinch.Reloaded.csproj">
+      <Project>{673879AD-29C1-42B8-9A79-3750418696AB}</Project>
+      <Name>Cinch.Reloaded</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{673879AD-29C1-42B8-9A79-3750418696AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cinch.Reloaded</RootNamespace>
+    <AssemblyName>Cinch.Reloaded</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WPF</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WPF</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Cinch.WPF.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Cinch.NuGet.Packager\Cinch.NuGet.Packager\lib\net40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Cinch.WPF.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Tester\bin\Debug\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Tester\bin\Debug\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Bases\EditableValidatingObject.cs" />
+    <Compile Include="BusinessObjects\Bases\ValidatingObject.cs" />
+    <Compile Include="BusinessObjects\DataWrapper.cs" />
+    <Compile Include="BusinessObjects\Validator.cs" />
+    <Compile Include="Commands\EventToCommandArgs.cs" />
+    <Compile Include="Commands\SimpleCommand.cs" />
+    <Compile Include="Events\EventArgs\CloseRequestEventArgs.cs" />
+    <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
+    <Compile Include="Events\WeakEvents\WeakEvent.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventAction.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventHelper.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventProxy.cs" />
+    <Compile Include="ExtensionMethods\DispatcherExtensions.cs" />
+    <Compile Include="Interactivity\Actions\CommandDrivenGoToStateAction.cs" />
+    <Compile Include="Interactivity\Behaviors\Behaviors.cs" />
+    <Compile Include="Interactivity\Behaviors\DataGridRowFocusBehavior.cs" />
+    <Compile Include="Interactivity\Behaviors\FocusBehaviorBase.cs" />
+    <Compile Include="Interactivity\Behaviors\NumericTextBoxBehaviour.cs" />
+    <Compile Include="Interactivity\Behaviors\SelectorDoubleClickCommandBehavior.cs" />
+    <Compile Include="Interactivity\Behaviors\SupplementaryInteraction.cs" />
+    <Compile Include="Interactivity\Behaviors\TextBoxFocusBehavior.cs" />
+    <Compile Include="Interactivity\Behaviors\Triggers.cs" />
+    <Compile Include="Interactivity\Triggers\CompletedAwareCommandTrigger.cs" />
+    <Compile Include="Interactivity\Triggers\CompletedAwareGotoStateCommandTrigger.cs" />
+    <Compile Include="Interactivity\Triggers\EventToCommandTrigger.cs" />
+    <Compile Include="MarkupExtensions\BindingDecoratorBase.cs" />
+    <Compile Include="Messaging\MediatorMessageSinkAttribute.cs" />
+    <Compile Include="Messaging\MediatorSingleton.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Implementation\ExtendedWPFUIVisualizerService.cs" />
+    <Compile Include="Services\Implementation\ViewAwareStatusWindow.cs" />
+    <Compile Include="Services\Implementation\ViewAwareStatus.cs" />
+    <Compile Include="Services\Implementation\VSMService.cs" />
+    <Compile Include="Services\Implementation\WPFMessageBoxService.cs" />
+    <Compile Include="Services\Implementation\WPFOpenFileService.cs" />
+    <Compile Include="Services\Implementation\WPFSaveFileService.cs" />
+    <Compile Include="Services\Implementation\WPFUIVisualizerService.cs" />
+    <Compile Include="Services\Interfaces\IExtendedUIVisualizerService.cs" />
+    <Compile Include="Services\Interfaces\IMessageBoxService.cs" />
+    <Compile Include="Services\Interfaces\IOpenFileService.cs" />
+    <Compile Include="Services\Interfaces\ISaveFileService.cs" />
+    <Compile Include="Services\Interfaces\IUIVisualizerService.cs" />
+    <Compile Include="Services\Interfaces\IViewAwareStatus.cs" />
+    <Compile Include="Services\Interfaces\IViewAwareStatusWindow.cs" />
+    <Compile Include="Services\Interfaces\IVSM.cs" />
+    <Compile Include="Services\Implementation\OwnerOption.cs" />
+    <Compile Include="Services\Test Implementations\TestMessageBoxService.cs" />
+    <Compile Include="Services\Test Implementations\TestOpenFileService.cs" />
+    <Compile Include="Services\Test Implementations\TestSaveFileService.cs" />
+    <Compile Include="Services\Test Implementations\TestUIVisualizerService.cs" />
+    <Compile Include="Services\Test Implementations\TestViewAwareStatus.cs" />
+    <Compile Include="Services\Test Implementations\TestViewAwareStatusWindow.cs" />
+    <Compile Include="Services\Test Implementations\TestVSMService.cs" />
+    <Compile Include="Threading\AddRangeObservableCollection.cs" />
+    <Compile Include="Threading\ApplicationHelper.cs" />
+    <Compile Include="Threading\BackgroundTaskManager.cs" />
+    <Compile Include="Threading\Controls\AsyncBusyUserControl.xaml.cs">
+      <DependentUpon>AsyncBusyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\Controls\AsyncFailedUserControl.xaml.cs">
+      <DependentUpon>AsyncFailedUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\Controls\AsyncHost.cs" />
+    <Compile Include="Threading\Controls\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />
+    <Compile Include="Threading\ISynchronizationContext.cs" />
+    <Compile Include="Threading\UISynchronizationContext.cs" />
+    <Compile Include="UIMisc\CinchMenuItem.cs" />
+    <Compile Include="UIMisc\TabControlEx.cs" />
+    <Compile Include="Utilities\ArgumentValidator.cs" />
+    <Compile Include="Utilities\BindingEvaluator.cs" />
+    <Compile Include="Utilities\ObservableDictionary.cs" />
+    <Compile Include="Utilities\ObservableHelper.cs" />
+    <Compile Include="Utilities\PropertyObserver.cs" />
+    <Compile Include="Utilities\TreeHelper.cs" />
+    <Compile Include="Utilities\WeakDelegateReference.cs" />
+    <Compile Include="Validation\EmptyStringCheckingRegexRule.cs" />
+    <Compile Include="Validation\GenericRule.cs" />
+    <Compile Include="Validation\RegexRule.cs" />
+    <Compile Include="Validation\Rule.cs" />
+    <Compile Include="UIMisc\SeparatorStyleSelector.cs" />
+    <Compile Include="Validation\SimpleRule.cs" />
+    <Compile Include="ViewModels\EditableValidatingViewModelBase.cs" />
+    <Compile Include="ViewModels\ICinchDisposable.cs" />
+    <Compile Include="ViewModels\IViewStatusAwareInjectionAware.cs" />
+    <Compile Include="ViewModels\IViewStatusAwareWindowInjectionAware.cs" />
+    <Compile Include="ViewModels\ValidatingViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewMode.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Workspaces\PopupNameToViewLookupKeyMetadataAttribute.cs" />
+    <Compile Include="Workspaces\PopupResolver.cs" />
+    <Compile Include="ViewModels\ViewModelBaseWPFSpecific.cs" />
+    <Compile Include="Workspaces\CinchBootStrapper.cs" />
+    <Compile Include="Workspaces\IWorkspaceAware.cs" />
+    <Compile Include="Workspaces\MockView.cs" />
+    <Compile Include="Workspaces\NavProps.cs" />
+    <Compile Include="Workspaces\ViewnameToViewLookupKeyMetadataAttribute.cs" />
+    <Compile Include="Workspaces\ViewResolver.cs" />
+    <Compile Include="Workspaces\WorkspaceData.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Threading\Controls\AsyncBusyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Threading\Controls\AsyncFailedUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Threading\Controls\CircularProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MEFedMVVM">
+      <Version>1.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Windows.Interactivity.WPF">
+      <Version>2.0.20525</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

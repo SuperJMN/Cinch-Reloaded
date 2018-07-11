@@ -1,0 +1,27 @@
+﻿/// <summary>
+/// These events args are used to close the active popup window
+/// that may have been opened using the WPF implementation of the
+/// IUIVisualizerService
+/// </summary>
+namespace Cinch.Reloaded.Events.EventArgs
+{
+    /// <summary>
+    /// This is used to send result parameters to a CloseRequest
+    /// </summary>
+    public class CloseRequestEventArgs : System.EventArgs
+    {
+        #region Data
+        ///<summary>
+        /// Final result for ShowDialog
+        ///</summary>
+        public bool? Result { get; private set; }
+        #endregion
+
+        #region Ctor
+        internal CloseRequestEventArgs(bool? result)
+        {
+            Result = result;
+        }
+        #endregion
+    }
+}

@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="Cinch.Reloaded.Threading.Controls.AsyncFailedUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="Auto" Width="Auto" HorizontalAlignment="Stretch" 
+             VerticalAlignment="Stretch">
+
+    <Border Margin="0" Background="White">
+
+        <Grid Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Height="30" Margin="0,10,10,0" VerticalAlignment="Bottom" CornerRadius="5">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#FF7C7C7C"/>
+                        <GradientStop Color="#FF3D3D3D" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Image HorizontalAlignment="Center" Margin="10,0,0,-17" Source="/CinchV2AndPrismRegions;component/Images/error.png" Stretch="Fill" Width="60" Height="60" VerticalAlignment="Center"/>
+
+                <Label Content="Failed" FontSize="15" HorizontalContentAlignment="Center"
+        		VerticalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" Padding="0" Margin="10,10,0,0" HorizontalAlignment="Left" />
+            </StackPanel>
+
+
+
+            <TextBox Grid.Row="1" 
+                Margin="10,20,10,10"
+                TextWrapping="Wrap" 
+                BorderThickness="0"
+                Foreground="Black"   
+                FontSize="12"                     
+                FontFamily="Verdana"
+                FontWeight="Bold"
+                BorderBrush="Transparent" 
+                Background="Transparent"
+                IsReadOnly="True" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch"
+                Text="The following error occurred whilst trying to obtain the data:"/>
+
+            <TextBox x:Name="txtError"
+                 Grid.Row="2"  
+                 TextWrapping="Wrap" 
+                 BorderThickness="0" 
+                 Margin="10"
+                 FontSize="10"
+                 FontFamily="Verdana"
+                 Foreground="Black"                     
+                 BorderBrush="Transparent" 
+                 Background="Transparent"
+                 IsReadOnly="True"
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch" />
+        </Grid>
+    </Border>
+
+</UserControl>
