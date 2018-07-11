@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>8d2529f7-2281-402f-94d5-132e91f2fcc9</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>Cinch.Extended</Id>
+    <Version>2.1.1.6</Version>
+    <Title>Cinch Extended MVVM Framework</Title>
+    <Authors>Sacha Barber, José Manuel Nieto</Authors>
+    <Owners>oliver254, sachabarber</Owners>
+    <Summary>NuGet Package</Summary>
+    <Description>Extended version of Cinch MVVM Framework by Sacha Barber. Cinch is a MVVM framework that exposes a number of helper classes to allow the developer to quickly get to grips with creating scalable testable MVVM frameworks as quickly as possible.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>http://cinch.codeplex.com/</ProjectUrl>
+    <LicenseUrl>http://cinch.codeplex.com/license</LicenseUrl>
+    <Copyright>Copyright 2014</Copyright>
+    <Tags>NuGet_Package</Tags>
+    <IconUrl>http://i1334.photobucket.com/albums/w645/SuperJMN/cinch_zps15916e16.png</IconUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\4.5\Cinch\Cinch.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
